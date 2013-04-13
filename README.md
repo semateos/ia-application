@@ -43,6 +43,9 @@ There are four services available, which key can be overwritten by the construct
 - router, defaults to `new InnoAccel.Router.Reactive(new InnoAccel.Router.SimpleRouteList([]), services.request.getPath))`
 - dispatcher, defaults to `new InnoAccel.Controller.Dispatcher(services.router.match, [])`
 
+## Example
+There is an example in the examples directory. Run `mrt update` before.
+
 ## API
 The source code is fully annotated.
 

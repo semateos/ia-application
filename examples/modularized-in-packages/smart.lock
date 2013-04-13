@@ -1,0 +1,66 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "branch": "master",
+    "commit": "0ffea1c4c308ed24906984f99b13b8fca5a0956c"
+  },
+  "dependencies": {
+    "basePackages": {
+      "ia-application": {},
+      "ia-navigation-reactiverouter": {},
+      "ia-basiccontroller": {}
+    },
+    "packages": {
+      "ia-application": {
+        "git": "https://github.com/InnoAccel/ia-application.git",
+        "tag": "v0.1.0",
+        "commit": "0f7fbc21d3ca087c759cbfeee2263f3b3e68697e"
+      },
+      "ia-navigation-reactiverouter": {
+        "git": "https://github.com/InnoAccel/ia-navigation-reactiverouter.git",
+        "tag": "v0.1.0",
+        "commit": "329c3f1bb40dcde65b99ad64702c8f3a9844835f"
+      },
+      "ia-basiccontroller": {
+        "git": "https://github.com/InnoAccel/ia-basiccontroller.git",
+        "tag": "v0.1.0",
+        "commit": "0e459ad1a591769df4200b3923aebaa146140464"
+      },
+      "ia-dispatcher": {
+        "git": "https://github.com/InnoAccel/ia-dispatcher.git",
+        "tag": "v0.1.2",
+        "commit": "1120fe6ade4fd344a77d385c36bdb6540e691be5"
+      },
+      "ia-router-reactive": {
+        "git": "https://github.com/InnoAccel/ia-router-reactive.git",
+        "tag": "v0.5.1",
+        "commit": "83c82321a3b0ada0908aee439eb91cd0224da570"
+      },
+      "ia-viewlayout-helper": {
+        "git": "https://github.com/InnoAccel/ia-viewlayout-helper.git",
+        "tag": "v0.1.2",
+        "commit": "77e0596f57b9568cea7210539713ced285adb467"
+      },
+      "meteor-location": {
+        "git": "https://github.com/tmeasday/meteor-location.git",
+        "branch": "master",
+        "commit": "5ed66917ef7fcb6fee1e28f2d4bb4aaa020b2acd"
+      },
+      "ia-navigation": {
+        "git": "https://github.com/InnoAccel/ia-navigation.git",
+        "tag": "v0.3.5",
+        "commit": "5ef12e8a01e060320016cbf057f490223341d80a"
+      },
+      "ia-router-core": {
+        "git": "https://github.com/InnoAccel/ia-router-core.git",
+        "tag": "v0.5.0",
+        "commit": "db0b95835dcaa679d098612e9e93380919905624"
+      },
+      "page-js-ie-support": {
+        "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
+        "tag": "v1.3.5",
+        "commit": "b99ed8380aefd10b2afc8f18d9eed4dd0d8ea9cb"
+      }
+    }
+  }
+}
