@@ -16,6 +16,7 @@ Package.on_test(function (api) {
     api.use(['ia-application', 'tinytest'], 'client');
 
     api.add_files([
-        'tests/ServiceLocatorTest.js'
+        'tests/ServiceLocatorTest.js',
+        'tests/ApplicationTest.js'
     ], 'client');
 });
