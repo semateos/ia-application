@@ -3,7 +3,7 @@
     "description": "Basic infrastructure for modularized Meteor applications ",
     "homepage": "https://github.com/InnoAccel/ia-application",
     "author": "Fritz Gerneth <fgerneth@effms.de>",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "git": "https://github.com/InnoAccel/ia-application.git",
     "packages": {
         "ia-dispatcher": {},
