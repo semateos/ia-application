@@ -49,8 +49,8 @@ Modules provide a grouped-together functionality of the application. The object 
 
 The `bootstrap` callback can be used for registering own services or access other services (e.g. the router, dispatcher).
 
-## Example
-There is an example in the examples directory. Run `mrt update` before.
+## Example application
+An example application is available in a separate repository: [ia-application-example](https://github.com/InnoAccel/ia-application-example)
 
 ## API
 The source code is fully annotated.
