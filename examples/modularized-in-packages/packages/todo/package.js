@@ -6,7 +6,7 @@
     });
 
     Package.on_use(function (api, where) {
-        api.use(['ia-navigation-reactiverouter', 'ia-basiccontroller', 'templating'], 'client');
+        api.use(['ia-basiccontroller', 'templating'], 'client');
 
         api.add_files([
             'Module.js',
