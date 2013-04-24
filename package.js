@@ -8,8 +8,14 @@ Package.on_use(function (api, where) {
     api.add_files([
         'lib/namespace.js',
         'lib/ServiceLocator.js',
-        'lib/Application.js'
+        'lib/ClientApplication.js'
     ], 'client');
+
+    api.add_files([
+        'lib/namespace.js',
+        'lib/ServiceLocator.js',
+        'lib/ServerApplication.js'
+    ], 'server');
 });
 
 Package.on_test(function (api) {
@@ -17,6 +23,11 @@ Package.on_test(function (api) {
 
     api.add_files([
         'tests/ServiceLocatorTest.js',
-        'tests/ApplicationTest.js'
+        'tests/ClientApplicationTest.js'
     ], 'client');
+
+    api.add_files([
+        'tests/ServiceLocatorTest.js',
+        'tests/ServerApplicationTest.js'
+    ], 'server');
 });

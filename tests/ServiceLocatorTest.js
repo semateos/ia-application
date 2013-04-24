@@ -1,4 +1,4 @@
-Tinytest.add('ia-application - registerService set/get service', function (test) {
+Tinytest.add('ia-application - ServiceLocator - registerService set/get service', function (test) {
     var locator = new InnoAccel.ServiceLocator(),
         service = {};
 
@@ -6,7 +6,7 @@ Tinytest.add('ia-application - registerService set/get service', function (test)
     test.equal(locator.getService('test'), service);
 });
 
-Tinytest.add('ia-application - registerService throws Exception service already present', function (test) {
+Tinytest.add('ia-application - ServiceLocator - registerService throws Exception service already present', function (test) {
     var locator = new InnoAccel.ServiceLocator(),
         exceptionCaught;
     locator.registerService('test', {});
@@ -19,7 +19,7 @@ Tinytest.add('ia-application - registerService throws Exception service already 
     test.isTrue(exceptionCaught);
 });
 
-Tinytest.add('ia-application - registerService exception informs about duplicate service name', function (test) {
+Tinytest.add('ia-application - ServiceLocator - registerService exception informs about duplicate service name', function (test) {
     var locator = new InnoAccel.ServiceLocator(),
         exceptionMessage;
     locator.registerService('test', {});
@@ -33,26 +33,26 @@ Tinytest.add('ia-application - registerService exception informs about duplicate
     test.equal(exceptionMessage, 'Already has a service named test');
 });
 
-Tinytest.add('ia-application - registerService has fluent interface', function (test) {
+Tinytest.add('ia-application - ServiceLocator - registerService has fluent interface', function (test) {
     var locator = new InnoAccel.ServiceLocator();
 
     test.equal(locator.registerService('test', {}), locator);
 });
 
-Tinytest.add('ia-application - hasService true if service present', function (test) {
+Tinytest.add('ia-application - ServiceLocator - hasService true if service present', function (test) {
     var locator = new InnoAccel.ServiceLocator();
     locator.registerService('test', {});
 
     test.isTrue(locator.hasService('test'));
 });
 
-Tinytest.add('ia-application - hasService false is not service present', function (test) {
+Tinytest.add('ia-application - ServiceLocator - hasService false is not service present', function (test) {
     var locator = new InnoAccel.ServiceLocator();
 
     test.isFalse(locator.hasService('test'));
 });
 
-Tinytest.add('ia-application - getService throws error if service not present', function (test) {
+Tinytest.add('ia-application - ServiceLocator - getService throws error if service not present', function (test) {
     var locator = new InnoAccel.ServiceLocator()
         errorCaught = false;
 
@@ -64,7 +64,7 @@ Tinytest.add('ia-application - getService throws error if service not present', 
     test.isTrue(errorCaught);
 });
 
-Tinytest.add('ia-application - getService error infors about service not present', function (test) {
+Tinytest.add('ia-application - ServiceLocator - getService error infors about service not present', function (test) {
     var locator = new InnoAccel.ServiceLocator(),
         errorMessage;
 

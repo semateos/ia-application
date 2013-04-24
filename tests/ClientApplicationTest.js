@@ -1,4 +1,4 @@
-Tinytest.add('ia-application - bootstrap informs all registered modules', function (test) {
+Tinytest.add('ia-application - ClientApplication - bootstrap informs all registered modules', function (test) {
     var application = new InnoAccel.Application({}),
         calls = 0,
         moduleMock = {bootstrap: function () { calls++; }};
@@ -7,7 +7,7 @@ Tinytest.add('ia-application - bootstrap informs all registered modules', functi
     test.equal(calls, 1);
 });
 
-Tinytest.add('ia-application - bootstrap registered modules after bootstrap', function (test) {
+Tinytest.add('ia-application - ClientApplication - bootstrap registered modules after bootstrap', function (test) {
     var application = new InnoAccel.Application({}),
         calls = 0,
         moduleMock = {bootstrap: function () { calls++; }};
@@ -17,7 +17,7 @@ Tinytest.add('ia-application - bootstrap registered modules after bootstrap', fu
     test.equal(calls, 2);
 });
 
-Tinytest.add('ia-application - start registered modules', function (test) {
+Tinytest.add('ia-application - ClientApplication - start registered modules', function (test) {
     var application = new InnoAccel.Application({getService: function () {return {dispatch: function() {}}}}),
         calls = 0,
         moduleMock = {start: function () { calls++; }};
@@ -26,7 +26,7 @@ Tinytest.add('ia-application - start registered modules', function (test) {
     test.equal(calls, 2);
 });
 
-Tinytest.add('ia-application - start uses dispatcher of service locator', function (test) {
+Tinytest.add('ia-application - ClientApplication - start uses dispatcher of service locator', function (test) {
     var calls = 0,
         dispatcherMock = {dispatch: function() { calls++; }},
         application = new InnoAccel.Application({getService: function () {return dispatcherMock}});
