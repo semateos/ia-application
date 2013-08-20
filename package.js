@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api, where) {
-    api.use(['ia-dispatcher', 'ia-router-reactive', 'ia-viewlayout-helper', 'meteor-location', 'underscore'], 'client');
+    api.use(['ia', 'ia-dispatcher', 'ia-router-reactive', 'ia-viewlayout-helper', 'meteor-location', 'underscore'], 'client');
     api.use(['underscore'], 'server');
 
     api.add_files([
@@ -17,8 +17,6 @@ Package.on_use(function (api, where) {
         'lib/ServiceLocator.js',
         'lib/ServerApplication.js'
     ], 'server');
-
-    api.export("InnoAccel");
 });
 
 Package.on_test(function (api) {
