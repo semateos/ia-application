@@ -3,7 +3,7 @@
     "description": "Basic infrastructure for modularized Meteor applications ",
     "homepage": "https://github.com/InnoAccel/ia-application",
     "author": "Fritz Gerneth <fgerneth@effms.de>",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "git": "https://github.com/InnoAccel/ia-application.git",
     "packages": {
         "ia": {
@@ -13,7 +13,7 @@
         "ia-router-reactive": {},
         "ia-viewlayout-helper": {},
         "meteor-location": {
-            "git": "https://github.com/InnoAccel/meteor-location.git"
+            "git": "https://github.com/semateos/meteor-location.git"
         }
     }
 }
